@@ -27,7 +27,7 @@ class Compose(object):
         return image, target
 
 
-class RandomHorizontalFlip(T.RandomHorizontalFlip):
+class RandomHorizontalFlip(T.RandomHorizontalFlip):    
     def forward(self, image: Tensor,
                 target: Optional[Dict[str, Tensor]] = None) -> Tuple[Tensor, Optional[Dict[str, Tensor]]]:
         if torch.rand(1) < self.p:
