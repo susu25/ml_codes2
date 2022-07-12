@@ -7,3 +7,5 @@ PennFudanPed/
 data/
 my_experiment/
 *.pkl
+runs/
+models/
